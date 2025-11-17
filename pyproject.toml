@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypi_hello_world"
+version = "0.1.0"
+description = "A simple package that provides a hello world function"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/entimaniac/pypi_hello_world"
+"Bug Tracker" = "https://github.com/entimaniac/pypi_hello_world/issues"
+
