@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide explains how to deploy the `pypi_hello_world` package to PyPI using GitHub Actions.
+This guide explains how to deploy the `entimaniac_hello_world` package to PyPI using GitHub Actions.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ PyPI now supports "Trusted Publishing" which allows GitHub Actions to publish pa
 2. Scroll down to "Publishing" section
 3. Click "Add a new pending publisher"
 4. Fill in the following details:
-   - **PyPI Project Name**: `pypi_hello_world` (or your chosen package name)
+   - **PyPI Project Name**: `entimaniac_hello_world`
    - **Owner**: Your GitHub username (e.g., `entimaniac`)
    - **Repository name**: `pypi_hello_world`
    - **Workflow name**: `publish-to-pypi.yml`
@@ -70,7 +70,7 @@ The GitHub Actions workflow (`.github/workflows/publish-to-pypi.yml`) consists o
 
 To publish a new version:
 
-1. Update the version in `pypi_hello_world/__init__.py`
+1. Update the version in `entimaniac_hello_world/__init__.py`
 2. Update the version in `pyproject.toml`
 3. Commit the changes
 4. Create a new release with a corresponding tag (e.g., `v0.2.0`)
@@ -105,13 +105,13 @@ python -m build
 Once published, anyone can install your package:
 
 ```bash
-pip install pypi_hello_world
+pip install entimaniac_hello_world
 ```
 
 And use it in Python:
 
 ```python
-from pypi_hello_world import hello
+from entimaniac_hello_world import hello
 
 print(hello("World"))  # Output: Hello World
 ```

@@ -1,7 +1,7 @@
 """Tests for the hello function."""
 
 import unittest
-from pypi_hello_world import hello
+from entimaniac_hello_world import hello
 
 
 class TestHello(unittest.TestCase):
